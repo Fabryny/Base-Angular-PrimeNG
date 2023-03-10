@@ -1,0 +1,22 @@
+.img-ids{    
+    width: 60px;
+    height: 60px;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(161 161 161 / 25%);
+    width: 100%;
+}
+.btn-ativo{
+    color: #1976d2 !important
+}
+.p-button{
+    width: 100%;
+}
+.btn-ativo, .p-button.p-button-text.p-button-plain:enabled:hover{
+    background: #ebf5ff;
+}
+:host ::ng-deep .p-sidebar-header {
+    padding: 0;
+}

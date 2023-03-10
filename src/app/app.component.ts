@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsuarioService } from './shared/services/usuario/usuario.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto';
+  showSidebar: boolean = false;
+  constructor(private usuarioService: UsuarioService) { }
+  
+  deslogar(){
+    this.usuarioService.deslogar();
+    this.showSidebar = false;
+  }
 }
+
+

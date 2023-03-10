@@ -1,0 +1,606 @@
+{
+  "operadores": [
+    {
+      "id": 8,
+      "nome": "testeATT",
+      "situacao": 0,
+      "nomeAcesso": "nome",
+      "senha": "sasas",
+      "produtos": [
+        "saude",
+        "social",
+        "educacao"
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "123",
+      "situacao": 1,
+      "nomeAcesso": "Matheus",
+      "senha": "123",
+      "produtos": [
+        "saude",
+        "social",
+        "educacao"
+      ]
+    }
+  ],
+  "programas": [
+    {
+      "id": 3,
+      "nome": "foi",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "teste",
+      "situacao": {
+        "id": 0,
+        "descricao": "Inativo"
+      },
+      "produto": {
+        "id": "2",
+        "descricao": "Educação"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "te",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "aa",
+      "situacao": {
+        "id": 0,
+        "descricao": "Inativo"
+      },
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      }
+    }
+  ],
+  "funcionalidades": [
+    {
+      "id": 0,
+      "nome": "\\dd",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "dsds",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "sdddsd",
+      "situacao": {
+        "id": 0,
+        "descricao": "Inativo"
+      },
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      }
+    }
+  ],
+  "versoes": [
+    {
+      "id": 1,
+      "nome": "att",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "func",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 1,
+        "descricao": "Social"
+      }
+    },
+    {
+      "nome": "sasa",
+      "situacao": {
+        "id": 1,
+        "descricao": "Ativo"
+      },
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      },
+      "id": 3
+    }
+  ],
+  "ajudasInterativas": [
+    {
+      "id": 1,
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "textoEditor": ""
+    },
+    {
+      "id": 2,
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>dasdas</p>"
+    },
+    {
+      "id": 3,
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      },
+      "programa": {
+        "id": 6,
+        "nome": "te",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "funcionalidade": {
+        "id": 4,
+        "nome": "dsds",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>UI</p>"
+    },
+    {
+      "id": 4,
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      },
+      "programa": {
+        "id": 6,
+        "nome": "te",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "funcionalidade": {
+        "id": 4,
+        "nome": "dsds",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>dsddsddsds</p>"
+    },
+    {
+      "id": 5,
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "versao": {
+        "id": 2,
+        "nome": "func",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 1,
+          "descricao": "Social"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>dsdsds</p>"
+    },
+    {
+      "id": 6,
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "versao": {
+        "id": 2,
+        "nome": "func",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 1,
+          "descricao": "Social"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>dssdds</p>"
+    },
+    {
+      "id": 7,
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      },
+      "programa": {
+        "id": 6,
+        "nome": "te",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "funcionalidade": {
+        "id": 4,
+        "nome": "dsds",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>dsddsds</p>"
+    },
+    {
+      "id": 8,
+      "produto": {
+        "id": 2,
+        "descricao": "Educação"
+      },
+      "programa": {
+        "id": 6,
+        "nome": "te",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "funcionalidade": {
+        "id": 4,
+        "nome": "dsds",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 2,
+          "descricao": "Educação"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 0,
+      "textoEditor": "<p>dsds</p>"
+    },
+    {
+      "id": 9,
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 1,
+      "textoEditor": "<p>ds</p>"
+    },
+    {
+      "id": 10,
+      "produto": {
+        "id": 0,
+        "descricao": "Saúde"
+      },
+      "programa": {
+        "id": 3,
+        "nome": "foi",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "funcionalidade": {
+        "id": 0,
+        "nome": "\\dd",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "versao": {
+        "id": 1,
+        "nome": "att",
+        "situacao": {
+          "id": 1,
+          "descricao": "Ativo"
+        },
+        "produto": {
+          "id": 0,
+          "descricao": "Saúde"
+        }
+      },
+      "situacao": 0,
+      "textoEditor": "<p>f</p>"
+    }
+  ]
+}

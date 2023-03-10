@@ -1,0 +1,68 @@
+
+<p-sidebar [(visible)]="openClose" 
+[dismissible]="false"[showCloseIcon]="false" 
+[style]="{width:'250px'}"
+[modal]="false" [baseZIndex]="10000">
+
+    <ng-template pTemplate="header">
+        <div class="header">
+            <img class="img-ids" src="assets/imagens/ids.webp" alt="Minha Figura">
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="content">
+        <div class="body">
+            <button [routerLink]="['/listar-operadores']" 
+                    routerLinkActive="btn-ativo"
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Operador"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+            
+            <button [routerLink]="['/listar-programas']" 
+                    routerLinkActive="btn-ativo" 
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Programa"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+            
+            <button [routerLink]="['/listar-funcionalidades']" 
+                    routerLinkActive="btn-ativo" 
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Funcionalidade"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+            
+            <button [routerLink]="['/listar-versoes']" 
+                    routerLinkActive="btn-ativo" 
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Versão"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+            
+            <button [routerLink]="['/ajuda-interativa']" 
+                    routerLinkActive="btn-ativo" 
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Ajuda interativa"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+        </div>
+
+    </ng-template>
+
+</p-sidebar>

@@ -1,0 +1,30 @@
+<div class="bg-login"></div>
+
+<form [formGroup]="formulario" novalidate>
+    <div class="body p-fluid grid">
+        <p-card  [style]="{'width': '25rem'}">
+            <ng-template pTemplate="header">
+                <div class="text-center col-12">
+                    <img class="img-ids" src="assets/imagens/ids.webp" alt="Minha Figura">
+                </div>
+            </ng-template>
+            <div class="field text-center col-12">
+                <span class="p-float-label">
+                    <input formControlName="nome" type="text" pInputText required>
+                    <label for="inputtext">Nome</label>
+                </span>
+            </div>
+            
+            <div class="field text-center col-12">
+                    <span class="p-float-label">
+                        <p-password formControlName="senha" [toggleMask]="true" [feedback]="false"></p-password>
+                        <label for="inputtext">Senha</label>
+                    </span>
+            </div>
+            <ng-template pTemplate="footer">
+                <p-button (click)="logar()" class="mr-2" label="Entrar"></p-button>
+            </ng-template>
+        </p-card>
+
+    </div>
+</form>

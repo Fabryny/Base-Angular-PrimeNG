@@ -1,0 +1,40 @@
+
+<form [formGroup]="formulario" (ngSubmit)="salvar()">
+    <div class="p-fluid grid formgrid">
+
+        <div class="formgroup field col-12">
+            <h5>Nome</h5>
+            <input formControlName="nome" type="text" pInputText required
+                    [ngClass]="{ 'is-invalid': formEnviado && formControls['nome'].errors }">
+            <div *ngIf="formEnviado && formControls['nome'].errors" class="invalid-feedback">
+              <div *ngIf="formControls['nome'].errors['required']">Preencha o campo 'nome'</div>
+            </div>
+        </div>
+        <!-- COMPONENTIZAR VALIDAÇÃO -->
+
+        <div class="formgroup field col-12">
+            <h5>Situação</h5>
+            <p-dropdown [options]="listaSituacoes"  placeholder="Selecione"
+                        formControlName="situacao"optionLabel="descricao"
+                        [ngClass]="{ 'is-invalid': formEnviado && formControls['situacao'].errors }">
+            </p-dropdown>
+            <div *ngIf="formEnviado && formControls['situacao'].errors" class="invalid-feedback">
+              <div *ngIf="formControls['situacao'].errors['required']">Preencha o campo 'situação'</div>
+            </div>
+        </div>
+
+        <div class="formgroup field col-12">
+            <h5>Produto</h5>
+            <p-dropdown appendTo="body" [options]="listaProdutos"
+                        formControlName="produto" placeholder="Selecione" optionLabel="descricao" [showClear]="true"
+                        [ngClass]="{ 'is-invalid': formEnviado && formControls['produto'].errors }">
+            </p-dropdown>
+            <div *ngIf="formEnviado && formControls['produto'].errors" class="invalid-feedback">
+              <div *ngIf="formControls['produto'].errors['required']">Preencha o campo 'produto'</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center mt-3">
+        <p-button type="submit" label="{{edicao.nome ? 'Atualizar' : 'Salvar'}}"></p-button>
+    </div>
+</form>

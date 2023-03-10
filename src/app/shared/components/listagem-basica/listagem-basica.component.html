@@ -1,0 +1,50 @@
+
+
+
+<div class="col-12">
+    <p-button (click)="abrirModal()"  class="mr-2" label="Cadastrar"></p-button>
+
+    <p-table #dt [value]="listaRecebida"  [globalFilterFields]="['nome','situacao.descricao','produto.descricao']"
+             styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                     <input placeholder="Pesquisar" id="float-input" type="text" pInputText (input)="dt.filterGlobal($any($event.target).value,'contains')"> 
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="nome">Nome <p-sortIcon field="nome"></p-sortIcon></th>
+                <th pSortableColumn="situacao.descricao">Situação<p-sortIcon field="situacao.descricao"></p-sortIcon></th>
+                <th pSortableColumn="produto.descricao">Produto<p-sortIcon field="produto.descricao"></p-sortIcon></th>
+                <th class="text-center" style="width: 120px;">Ação</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+            <tr>
+                <td>{{item.nome}}</td>
+                <td>{{item.situacao.descricao}}</td>
+                <td>{{item.produto.descricao}}</td>
+                <td class="text-center inline-flex">
+                    <button pButton pRipple type="button" icon="pi pi-pencil" 
+                            class="mr-2 p-button-sm p-button-rounded"
+                            (click)="editar(item)">
+                    </button>
+                    <button pButton pRipple type="button" icon="pi pi-trash" 
+                            class="p-button-sm p-button-rounded p-button-danger"
+                            (click)="excluir(item)">
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<p-dialog *ngIf="showDialog" header="{{tipoLista}}" [(visible)]="showDialog" [modal]="true" [style]="{width: '50vw'}">
+        <app-cadastro-basico [edicao]="programaSelecionado" 
+                             (cadastrar)="salvarPayload($event)"
+                             (atualizar)="atualizarPayload($event)">
+        </app-cadastro-basico>
+</p-dialog>
