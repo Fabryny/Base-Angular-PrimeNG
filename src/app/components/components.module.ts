@@ -15,6 +15,8 @@ import { ListarVersaoComponent } from './versao/listar/listar-versao.component';
 import { AjudaInterativaComponent } from './ajuda-interativa/ajuda-interativa.component';
 import { LoginComponent } from './login/login.component';
 import { SidebarComponent } from '../shared/components/sidebar/sidebar.component';
+import { VisualizarAjudaComponent } from '../shared/components/visualizar-ajuda/visualizar-ajuda.component';
+import { DetalharAjudaComponent } from '../shared/components/detalhar-ajuda/detalhar-ajuda.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SidebarComponent } from '../shared/components/sidebar/sidebar.component
     ListarVersaoComponent,
     AjudaInterativaComponent,
     LoginComponent,
+    VisualizarAjudaComponent,
+    DetalharAjudaComponent,
   
     SidebarComponent
 
@@ -52,7 +56,8 @@ import { SidebarComponent } from '../shared/components/sidebar/sidebar.component
     ListarVersaoComponent,
     AjudaInterativaComponent,
     LoginComponent,
-  
+    VisualizarAjudaComponent,
+    DetalharAjudaComponent,
     SidebarComponent,
 
     ...PRIMENG_IMPORTS

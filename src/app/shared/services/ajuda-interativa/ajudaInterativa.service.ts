@@ -9,6 +9,7 @@ export class AjudaInterativaService {
   constructor(private http: HttpClient) { }
 
   salvar(data: any): Promise<void> {/* fazer dto console.log */
+    data.disponivel = "Não"
     return new Promise((r, e) => {
       this.http.post<any>("http://localhost:3000/ajudasInterativas", data).subscribe(response => {
         console.log('eeee',response);

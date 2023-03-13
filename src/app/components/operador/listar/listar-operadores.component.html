@@ -28,7 +28,7 @@
                     <td>{{item.nome}}</td>
                     <td>{{item.nomeAcesso}}</td>
                     <td>{{item.senha}}</td>
-                    <td>{{item.situacao}}</td>
+                    <td>{{item.situacao | situacao}}</td>
                     <td>{{item.produtos}}</td>
                     <td class="text-center inline-flex">
                         <button pButton pRipple type="button" icon="pi pi-pencil" 
@@ -48,6 +48,6 @@
 
 
 
-<p-dialog *ngIf="showDialog" header="Cadastrar Operador" [(visible)]="showDialog" [modal]="true" [style]="{width: '50vw'}">
+<p-dialog [closeOnEscape]="false" *ngIf="showDialog" header="Cadastrar Operador" [(visible)]="showDialog" [modal]="true" [style]="{width: '50vw'}">
         <app-cadastrar-operador [edicao]="operadorSelecionado" (fecharDialog)="atualizarModal()"></app-cadastrar-operador>
 </p-dialog>

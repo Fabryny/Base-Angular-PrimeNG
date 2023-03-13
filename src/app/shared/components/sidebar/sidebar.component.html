@@ -1,7 +1,7 @@
 
 <p-sidebar [(visible)]="openClose" 
 [dismissible]="false"[showCloseIcon]="false" 
-[style]="{width:'250px'}"
+[style]="{width:'250px'}" [closeOnEscape]="false"
 [modal]="false" [baseZIndex]="10000">
 
     <ng-template pTemplate="header">
@@ -58,6 +58,16 @@
                     pRipple
                     type="button"
                     label="Ajuda interativa"
+                    icon="pi pi-id-card"
+                    class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
+            </button>
+            
+            <button [routerLink]="['/visualizar-ajuda']" 
+                    routerLinkActive="btn-ativo" 
+                    pButton
+                    pRipple
+                    type="button"
+                    label="Visualizar ajuda"
                     icon="pi pi-id-card"
                     class="p-button-text p-button-plain mt-2 mb-2 shadow-1">
             </button>

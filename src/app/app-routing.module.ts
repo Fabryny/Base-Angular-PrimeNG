@@ -7,7 +7,7 @@ import { NotFoundGuard } from './guards/not-found.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: `/login`, pathMatch: 'full'
+    redirectTo: `login`, pathMatch: 'full'
   }
 ];
 

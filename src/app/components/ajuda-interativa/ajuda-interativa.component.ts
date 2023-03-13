@@ -100,12 +100,28 @@ export class AjudaInterativaComponent implements OnInit {
     this.getListaFuncionalidades(dado.value);
   }
 
+  verificarExistente(novoItem: any){
+    console.log(novoItem)
+    return this.listaAjudaInterativa.some((v:any) =>
+      v.produto.id === novoItem.produto.id &&
+      v.programa.id === novoItem.programa.id &&
+      v.funcionalidade.id === novoItem.funcionalidade.id &&
+      v.versao.id === novoItem.versao.id &&
+      v.situacao === novoItem.situacao
+      );
+  }
+
   salvar(){
-    console.log('salvar', this.formulario.value)
-    this.ajudaInterativaService.salvar(this.formulario.value).then(() => {
-      this.getListaAjudaInterativa()
-      this.formulario.reset()
-    }).catch((error: any) => {console.log(error)});
+
+    if(!this.verificarExistente(this.formulario.value)){
+      this.ajudaInterativaService.salvar(this.formulario.value).then(() => {
+        this.getListaAjudaInterativa()
+        this.formulario.reset()
+      }).catch((error: any) => {console.log(error)});
+      return
+    }
+    alert("Ja existe item cadastrado!")
+
   }
 
 

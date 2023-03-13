@@ -10,6 +10,7 @@ import { AjudaInterativaComponent } from './ajuda-interativa/ajuda-interativa.co
 import { LoginComponent } from './login/login.component';
 import { UsuarioAutenticadoGuard } from '../guards/usuario-autenticado.guard';
 import { NotFoundGuard } from '../guards/not-found.guard';
+import { VisualizarAjudaComponent } from '../shared/components/visualizar-ajuda/visualizar-ajuda.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,9 @@ const routes: Routes = [
   },
   {
     path: 'ajuda-interativa', component: AjudaInterativaComponent, canActivate: [UsuarioAutenticadoGuard],
+  },
+  {
+    path: 'visualizar-ajuda', component: VisualizarAjudaComponent, canActivate: [UsuarioAutenticadoGuard],
   },
   {
     path: '**',  component: LoginComponent, canActivate: [NotFoundGuard]

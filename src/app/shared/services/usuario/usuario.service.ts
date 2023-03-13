@@ -58,7 +58,7 @@ export class UsuarioService{
   get obterTokenUsuario(){
     const token = localStorage.getItem('token')
     if(token){
-      return  JSON.parse(token)
+      return  JSON.parse(atob(token))
     }
   }
 
