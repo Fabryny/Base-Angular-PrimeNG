@@ -61,22 +61,62 @@
 
 <p-table #dt [value]="listaAjudaInterativa"  [scrollable]="true" 
          scrollHeight="400px" [tableStyle]="{'min-width': '50rem'}"
-         styleClass="p-datatable-gridlines"><!-- [globalFilterFields]="['nome','nomeAcesso','senha','situacao','produtos']" -->
-<!--     <ng-template pTemplate="caption">
-        <div class="flex align-items-center justify-content-between">
-            <span class="p-input-icon-left">
-                <i class="pi pi-search"></i>
-                <input placeholder="Pesquisar" id="float-input" type="text" pInputText (input)="dt.filterGlobal($any($event.target).value,'contains')"> 
-            </span>
-        </div>
-    </ng-template> -->
+         styleClass="p-datatable-gridlines"
+         [globalFilterFields]="['programa.nome','funcionalidade.nome','versao.nome','situacao','disponivel']">
+        
     <ng-template pTemplate="header">
         <tr>
             <th>programa </th>
             <th>funcionalidade</th>
             <th>versao</th>
             <th>situacao</th>
-            <th >Disponível</th>
+            <th>Disponível</th>
+        </tr>
+        <tr>
+            <th>
+                <p-columnFilter field="situacao" matchMode="equals" [showMenu]="false">
+                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                        <span class="p-input-icon-left ml-auto">
+                            <i class="pi pi-search"></i>
+                            <input pInputText type="text" (input)="dt.filter($any($event.target).value, 'programa.nome', 'contains')"
+                                placeholder="Programa" />
+                        </span>
+                    </ng-template>
+                </p-columnFilter>
+            </th>
+            <th>
+                <p-columnFilter field="situacao" matchMode="equals" [showMenu]="false">
+                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                        <span class="p-input-icon-left ml-auto">
+                            <i class="pi pi-search"></i>
+                            <input pInputText type="text" (input)="dt.filter($any($event.target).value, 'funcionalidade.nome', 'contains')"
+                                placeholder="Funcionalidade" />
+                        </span>
+                    </ng-template>
+                </p-columnFilter>
+            </th>
+            <th>
+                <span class="p-input-icon-left ml-auto">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" (input)="dt.filter($any($event.target).value, 'versao.nome', 'contains')"
+                        placeholder="Versão" />
+                </span>
+            </th>
+            <th>
+                <p-columnFilter field="situacao" matchMode="equals" [showMenu]="false">
+                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                        <p-dropdown appendTo="body" [ngModel]="value" [options]="listaSituacoes" placeholder="Situação"
+                            (onChange)="filter($event.value)" optionValue="id" optionLabel="descricao">
+                        </p-dropdown>
+                    </ng-template>
+                </p-columnFilter>
+            </th>
+            <th>
+                <div class="field-checkbox">
+                    <p-checkbox  (input)="dt.filter($any($event.target).value, 'disponivel', 'contains')"></p-checkbox>
+                    <label for="ny">Disponivel</label>
+                </div>
+            </th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-item>
@@ -95,7 +135,7 @@
             </td>
         </tr>
     </ng-template>
-    <ng-template pTemplate="footer" [attr.colspan]="5">
+    <ng-template pTemplate="footer">
         <tr>
             <td [attr.colspan]="5">
                 Total de {{listaAjudaInterativa.length}} itens.

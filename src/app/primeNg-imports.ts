@@ -11,6 +11,8 @@ import {EditorModule} from 'primeng/editor';
 import {TooltipModule} from 'primeng/tooltip';
 import {CardModule} from 'primeng/card';
 import {SidebarModule} from 'primeng/sidebar';
+import {MultiSelectModule} from 'primeng/multiselect';
+
 
 export const PRIMENG_IMPORTS = [
     TableModule,
@@ -24,5 +26,6 @@ export const PRIMENG_IMPORTS = [
     EditorModule,
     TooltipModule,
     CardModule,
-    SidebarModule
+    SidebarModule,
+    MultiSelectModule
 ]
