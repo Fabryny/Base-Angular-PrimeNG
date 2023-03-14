@@ -112,10 +112,7 @@
                 </p-columnFilter>
             </th>
             <th>
-                <div class="field-checkbox">
-                    <p-checkbox  (input)="dt.filter($any($event.target).value, 'disponivel', 'contains')"></p-checkbox>
-                    <label for="ny">Disponivel</label>
-                </div>
+                <p-columnFilter type="boolean" field="disponivel"></p-columnFilter>
             </th>
         </tr>
     </ng-template>
