@@ -1,0 +1,9 @@
+ - Editar e Deletar Ajuda interativa
+ - estilização das validações(verificar)  dos formularios
+ - Mensagens confirmações
+ - Componentizar Tabela
+ - Const PATH Route
+ - Fazer DTOs
+ - Ajuste em "Produtos"
+ - Pipe Sim/Nao Ajuda interativa
+ - Pente fino Layout

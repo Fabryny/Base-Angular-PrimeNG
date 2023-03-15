@@ -1,3 +1,6 @@
+# Run
+Open one terminal and run: json-server --watch db.json
+In other terminal run: ng serve --open
 # Projeto
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
