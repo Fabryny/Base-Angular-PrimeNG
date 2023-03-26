@@ -7,15 +7,20 @@ import { OperadorService } from './services/operador/operador.service';
 import { VisualizarAjudaComponent } from './components/visualizar-ajuda/visualizar-ajuda.component';
 import { DetalharAjudaComponent } from './components/detalhar-ajuda/detalhar-ajuda.component';
 import { LoadInterceptor } from '../interceptors/load.interceptor';
+import { IframeFilhoComponent } from './components/iframes/iframe-filho/iframe-filho.component';
+import { IframeRoutingModule } from './components/iframes/iframe.routing.module';
+import { IframeModule } from './components/iframes/iframe.module';
 
 @NgModule({
   declarations: [
   ],
   imports: [
     PipeModule,
+    IframeRoutingModule,
   ],
   exports: [
     PipeModule,
+    IframeRoutingModule,
   ],
   providers: [ 
     OperadorService,
